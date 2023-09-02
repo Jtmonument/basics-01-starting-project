@@ -1,30 +1,34 @@
 let currentResult = 0;
 let calculationDescription;
 
+function writeOutput(operator, num) {
+    calculationDescription = `${currentResult} ${operator} ${num}`;
+}
+
 function add() {
     const input = userInput.value;
-    calculationDescription = `${currentResult} + ${input}`;
+    writeOutput('+', input);
     currentResult += +input;
     outputResult(currentResult, calculationDescription);
 }
 
 function subtract() {
     const input = userInput.value;
-    calculationDescription = `${currentResult} - ${input}`;
+    writeOutput('-', input);
     currentResult -= +input;
     outputResult(currentResult, calculationDescription);
 }
 
 function multiply() {
     const input = userInput.value;
-    calculationDescription = `${currentResult} x ${input}`;
+    writeOutput('x', input);
     currentResult *= +input;
     outputResult(currentResult, calculationDescription);
 }
 
 function divide() {
     const input = userInput.value;
-    calculationDescription = `${currentResult} / ${input}`;
+    writeOutput('/', input);
     currentResult /= +input;
     outputResult(currentResult, calculationDescription);
 }
