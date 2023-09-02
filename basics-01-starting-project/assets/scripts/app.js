@@ -1,12 +1,9 @@
-let currentResult = 5;
+let currentResult;
 
 function add(a, b) {
-    const result = `Result is ${a + b}`;
-    alert(result);
+    return a + b;
 }
 
-add(2, 2);
+currentResult = add(2, 2);
 
-let output = `${currentResult}`;
-
-outputResult(output, '');
+outputResult(currentResult, '');
