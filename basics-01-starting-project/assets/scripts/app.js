@@ -1,9 +1,8 @@
-let currentResult;
+let currentResult = 0;
 
-function add(a, b) {
-    return a + b;
+function add() {
+    currentResult += parseFloat(userInput.value);
+    outputResult(currentResult, '');
 }
 
-currentResult = add(2, 2);
-
-outputResult(currentResult, '');
+addBtn.addEventListener('click', add);
