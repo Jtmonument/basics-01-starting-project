@@ -1,5 +1,5 @@
-let currentResult = 0;
+let currentResult = 5;
 
-currentResult += 10;
+let output = `${currentResult}`;
 
-outputResult(currentResult, '');
+outputResult(output, '');
