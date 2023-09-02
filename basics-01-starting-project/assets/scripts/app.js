@@ -4,7 +4,11 @@ let logEntries = [];
 
 function writeOutput(operator, num) {
     calculationDescription = `${currentResult} ${operator} ${num}`;
-    logEntries.push(num);
+    const entry = {
+        operation: operator,
+        operand: num
+    };
+    logEntries.push(entry);
     console.log(logEntries);
 }
 
