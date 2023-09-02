@@ -1,8 +1,11 @@
 let currentResult = 0;
 let calculationDescription;
+let logEntries = [];
 
 function writeOutput(operator, num) {
     calculationDescription = `${currentResult} ${operator} ${num}`;
+    logEntries.push(num);
+    console.log(logEntries);
 }
 
 function add() {
