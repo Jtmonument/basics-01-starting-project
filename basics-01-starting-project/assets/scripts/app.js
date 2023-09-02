@@ -1,7 +1,7 @@
 let currentResult = 0;
 
 function add() {
-    currentResult += parseFloat(userInput.value);
+    currentResult += +userInput.value;
     outputResult(currentResult, '');
 }
 
